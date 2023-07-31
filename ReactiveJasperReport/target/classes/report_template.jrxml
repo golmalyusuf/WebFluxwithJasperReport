@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report_template" pageWidth="595" pageHeight="842" whenNoDataType="NoPages" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d972f1e2-68d7-47f8-835c-a3fccdd176d7">
+    <field name="existingField" class="java.lang.String"/>
+    <title>
+        <band height="50" splitType="Stretch">
+            <staticText>
+                <reportElement x="0" y="0" width="555" height="30" uuid="a0e9182e-90a4-4480-ab5e-4ff9c7db4f17"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <text><![CDATA[Sample Report Title]]></text>
+            </staticText>
+        </band>
+    </title>
+    <detail>
+        <band height="105" splitType="Stretch">
+            <textField>
+                <reportElement x="0" y="0" width="555" height="30" uuid="264ba5ab-516f-4293-9ba2-0c073e84a6db"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <textFieldExpression><![CDATA["Sample Data Row"]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="240" y="37" width="100" height="30" uuid="985f3812-7b52-45ab-86fb-20b5ecd45076"/>
+                <textFieldExpression><![CDATA[$F{existingField}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="140" y="37" width="100" height="30" uuid="9dd1f6f6-32e4-44ce-8601-1821fc6c3f3b"/>
+                <text><![CDATA[existingField]]></text>
+            </staticText>
+        </band>
+    </detail>
+</jasperReport>
